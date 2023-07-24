@@ -3,21 +3,18 @@
 
 <head>
   <title>HiFreQ - Tiers</title>
-  <!-- Add the link to the main CSS file to maintain the styling consistency -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <!-- Add the main title -->
     <h1>HiFreQ</h1>
   </header>
 
   <main>
     <section>
-      <!-- Add a form for investors to select the tier -->
       <h2>Tiers</h2>
-      <form action="confirmation.html" method="post">
+      <form action="confirmation.html" method="post" id="contact-form">
         <label>
           <input type="radio" name="tier" value="white">
           WHITE $200 - 14% Monthly
@@ -32,32 +29,24 @@
           <input type="radio" name="tier" value="green">
           GREEN $6,400 - 16% Monthly
         </label>
-        <div class="quantity-input">
-          <button type="button" class="quantity-btn" onclick="decreaseQuantity()">-</button>
-          <input type="number" id="quantity" name="quantity" min="1" value="1" required>
-          <button type="button" class="quantity-btn" onclick="increaseQuantity()">+</button>
+        <div class="quantity-wrapper">
+          <label>Quantity:</label>
+          <div class="quantity-input">
+            <button type="button" class="quantity-btn" onclick="decreaseQuantity()">-</button>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            <button type="button" class="quantity-btn" onclick="increaseQuantity()">+</button>
+          </div>
+        </div>
+        <div class="selected-tier">
+          <p>Selected Tier: <span id="selected-tier"></span></p>
+          <p>Amount: <span id="selected-amount"></span></p>
         </div>
         <input type="submit" value="Buy Now">
       </form>
     </section>
   </main>
 
-  <!-- Add the script to handle quantity increase and decrease -->
-  <script>
-    function decreaseQuantity() {
-      let quantityInput = document.getElementById("quantity");
-      let currentQuantity = parseInt(quantityInput.value);
-      if (currentQuantity > 1) {
-        quantityInput.value = currentQuantity - 1;
-      }
-    }
-
-    function increaseQuantity() {
-      let quantityInput = document.getElementById("quantity");
-      let currentQuantity = parseInt(quantityInput.value);
-      quantityInput.value = currentQuantity + 1;
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>

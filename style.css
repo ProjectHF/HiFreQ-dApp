@@ -1,21 +1,27 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #0a0a0a; /* Dark background color */
-  color: #ffffff; /* White text color */
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, button, input {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  border: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0a0a0a; /* Dark background color */
+  color: #ffffff; /* White text color */
+  line-height: 1.6;
 }
 
 .container {
-  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -23,25 +29,25 @@ h1 {
 }
 
 p {
-  font-size: 20px;
-  margin-bottom: 30px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-button {
+.button {
   background-color: #3498db; /* Blue button color */
   color: #ffffff;
   font-size: 20px;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
-  margin-right: 10px;
+  margin-top: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-button:hover {
+.button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }

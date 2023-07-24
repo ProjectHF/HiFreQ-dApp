@@ -152,18 +152,24 @@ input[type="radio"][value="white"] + label {
   background-color: #007BFF;
   padding: 10px;
   border-radius: 5px;
+  color: #fff;
+  text-align: center;
 }
 
 input[type="radio"][value="yellow"] + label {
   background-color: #FFC107;
   padding: 10px;
   border-radius: 5px;
+  color: #fff;
+  text-align: center;
 }
 
 input[type="radio"][value="green"] + label {
   background-color: #28A745;
   padding: 10px;
   border-radius: 5px;
+  color: #fff;
+  text-align: center;
 }
 
 /* Style the quantity section */

@@ -7,6 +7,10 @@ body, h1, h2, p, ul, ol, li {
 /* Set the dark mode color theme */
 body {
   background-color: #111;
+  background-image: Aut.jpg;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #eee;
 }
 
